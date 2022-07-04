@@ -1,0 +1,10 @@
+nome: str = input("Digite seu nome completo: ")
+print("Seu nome escrito normalmmente: {}".format(nome))
+print("Seu nome escrito em maiusculo: {}".format(nome.upper()))
+print('Seu nome escrito em minusculo: {}'.format(nome.lower()))
+divide = nome.split()
+juncao = ''.join(divide)
+print("seu nome {} completo tem {} letras sem contar os espaços".format(nome, len(juncao)))
+divide = divide[0]
+juncao = ''.join(divide)
+print('Seu primeiro nome {} tem {} letras'.format(divide, len(juncao)))

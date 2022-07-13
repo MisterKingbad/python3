@@ -1,9 +1,10 @@
 from time import sleep
 n = int(input("ponha um numero para ver o seu fatorial: "))
-c: int = n
+c = n
+f = 1
 while c > 0:
-    sleep(0)
-    print(c)
+    print('{}'.format(c), end='')
+    print(' x ' if c > 1 else ' = ', end='')
+    f *= c
     c -= 1
-    n = n * c
-    print("o seu fatorial é {}".format(n))
+print("{}".format(f))

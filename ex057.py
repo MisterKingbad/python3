@@ -1,9 +1,4 @@
-sx = 'M', "F"
-
-while sx == 'M' or 'F':
-    sx = str(input("DIGITE O SEXO M/F:")).upper()
-    if sx in 'Mm' and 'Ff':
-        print(' VOCE ESCOLHEU "{}"'.format(sx))
-        break
-    else:
-        print("TENTE NOVAMENTE")
+sx = str(input("DIGITE O SEXO M/F:")).strip().upper()[0]
+while sx not in 'MmFf':
+    sx = str(input("Dados invalidos. TENTE NOVAMENTE")).strip().upper()
+print(' VOCE ESCOLHEU "{}"'.format(sx))

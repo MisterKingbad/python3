@@ -1,9 +1,13 @@
-print('============================================')
-tb = int(input("QUER VER A TABUADA DE QUAL VALOR?"))
-print('============================================')
-c = 1
-while c < 10+1:
-    if tb <= -0:
+
+while True:
+    print('='*30)
+    tb = int(input("QUER VER A TABUADA DE QUAL VALOR?:"))
+    print('='*30)
+    if tb < 0:
         break
-    print('{} x {:2} = {}'.format(tb, c, tb * c))
-    c += 1
+    for c in range (1,11):
+        print(f'{tb} x {c} = {tb*c}')
+print('Programa encerrada')
+
+
+

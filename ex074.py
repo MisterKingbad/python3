@@ -1,6 +1,4 @@
 from random import randint
-valormaior = ' '
-valormenor = ' '
 valor = (randint(1,10), randint(1,10),randint(1,10), randint(1,10), randint(1,10))
 print(f'Os valores sorteados foram: ', end=' ')
 for n in valor:

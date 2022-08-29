@@ -9,4 +9,4 @@ for i, v in enumerate(lista):
     elif v % 2 == 1:
         impoar.append(v)
 print(f'Os valores pares digitados foram: {sorted(par)}')
-print(f'Os valores impares digitados foram: {sorted(impoar)}')
+print(f'Os valores impares digitados foram: {sorted(impoar)}'

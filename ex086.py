@@ -1,8 +1,9 @@
-lista = []
-
-for c in range(0,9):
-    lista.append(int(input('Digite um valor para :')))
+lista = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+for l in range(0,3):
+    for c in range(0,3):
+        lista[l][c] = int(input(f'Digite um valor para [{l},{c}]: '))
 print('-='*30)
-print(f'[ {lista[0]} ][ {lista[1]} ][ {lista[2]} ]')
-print(f'[ {lista[3]} ][ {lista[4]} ][ {lista[5]} ]')
-print(f'[ {lista[6]} ][ {lista[7]} ][ {lista[8]} ]')
+for l in range(0,3):
+    for c in range(0,3):
+        print(f"[{lista[l][c]:^5}]", end='')
+    print()

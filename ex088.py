@@ -7,8 +7,8 @@ print('      JOGO NA MEGA SENA')
 print('-'*30)
 quant = int(input('Quantos jogos voce quer que eu sorteie: '))
 tot = 1
-c = 0
 while tot <= quant:
+    c = 0
     while True:
         num = randint(1, 60)
         if num not in lista:
@@ -20,5 +20,8 @@ while tot <= quant:
     jogos.append(lista[:])
     lista.clear()
     tot += 1
-print(f" Os numeros sorteados foram {jogos}", end='')
-print()
+print(f"=-"*3, f' SORTEANDO {quant} JOGOS ', '-='*3)
+sleep(1)
+for i, l in enumerate(jogos):
+    print(f"Jogo {i+1}: {l}")
+    sleep(1)
